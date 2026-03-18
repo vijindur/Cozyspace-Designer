@@ -60,9 +60,8 @@ const Dashboard = () => {
     <div className="min-h-screen flex flex-col bg-background">
       <Navbar />
       <main className="flex-1">
-        {/* Templates section for empty state */}
-        {designs.length === 0 && (
-          <section className="px-6 md:px-12 max-w-6xl mx-auto pt-12 mb-12">
+        {/* Templates section */}
+        <section className="px-6 md:px-12 max-w-6xl mx-auto pt-12 mb-12">
             <div className="text-center mb-8">
               <h2 className="font-display text-2xl md:text-3xl font-bold mb-2">Start from a Template</h2>
               <p className="text-muted-foreground text-sm">Pre-configured rooms with furniture — get started in seconds</p>
@@ -90,7 +89,6 @@ const Dashboard = () => {
               ))}
             </div>
           </section>
-        )}
 
         {/* Designs section */}
         <section className="px-6 md:px-12 max-w-6xl mx-auto pb-16 pt-8">
